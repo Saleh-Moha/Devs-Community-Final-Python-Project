@@ -1,0 +1,142 @@
+Week 1 : Introduction to Github
+    Topics:
+    ========
+        what is Github
+        Set up your GitHub account
+        Initialize a new repository (git init or create directly on GitHub)
+        Basic Git commands: git add, git commit, git push, git pull 
+        Create, list, and switch branches (git branch, git checkout) , Merge branches (git merge)
+        Forks
+
+Week 2: Introduction to Python
+    Topics:
+    ========
+        What is Python?
+        Python installation and setup (Python 3.x)
+        Introduction to Python IDEs (e.g., PyCharm, VSCode, Jupyter)
+        Python syntax, indentation, and comments
+        Data types: Numbers (int, float), Strings, Booleans
+        Variables and constants
+        Basic input/output functions (print(), input())
+    Practice:
+    =========
+        Simple arithmetic operations
+        Writing a program to take user input and display output
+====================================================================================
+Week 3: Control Flow
+    Topics:
+    ========
+        Conditional statements: if, else, elif
+        Comparison and logical operators
+        Loops: for, while
+        break and continue statements
+
+    Practice:
+    =========
+        Write a program that prints numbers 1–100
+        Simple calculator with user input
+        Guessing game with a loop and conditional statements
+=====================================================================
+Week 4: Functions
+    Topics:
+    ========
+        Defining and calling functions
+        Parameters and return values
+        Scope of variables (local vs global)
+        Lambda functions (basic intro)
+        Importing and using built-in modules
+    Practice:
+    ==========
+        Write functions for basic arithmetic
+        Program to find the factorial of a number
+        Program using a lambda function for simple operations
+===========================================================================
+Week 5: Data Structures
+    Topics:
+    ========
+        Lists: creating, indexing, slicing, methods (append(), remove(), etc.)
+        Tuples: creation and basic operations
+        Sets: creating, adding, removing elements
+        Dictionaries: key-value pairs, adding and removing elements
+    Practice:
+    ==========
+        Program to manage a list of students
+        Program to count word occurrences in a string
+        Create a phonebook using dictionaries
+    =========================================================
+Week 6: File Handling
+    Topics:
+        Opening and reading files
+        Writing to files
+        Handling exceptions (try/except blocks)
+    Practice:
+        Write a program to read from a text file and display contents
+        Program to write user input to a file
+        Error handling for file operations
+==============================================
+Week 7: Object-Oriented Programming (OOP)
+    Topics:
+    ========
+        Introduction to classes and objects
+        Defining and using attributes and methods
+        Constructors (__init__ method)
+        polymorphism
+    Practice:
+    ==========
+        Create a class for a Bank Account
+        Implement inheritance for different account types
+        Simple OOP-based project (e.g., Student Management System)
+======================================================================
+Week 7: Modules and Packages
+Topics:
+What are modules and packages?
+Importing external libraries (e.g., math, datetime)
+Writing your own modules
+Overview of pip for installing external packages
+Practice:
+Create a custom module for reusable functions
+Use the math module to perform advanced calculations
+
+
+final project
+===============
+
+Project: Library Management System
+    Project Overview:
+        A Library Management System allows users (library staff) to:
+
+            -Add, search, and remove books from the library collection.
+            -Borrow and return books, tracking which books are borrowed by which users.
+            -Display available books and search for books by title or author.
+            -Save all data persistently in a text file or CSV for future reference.
+            -Key Features:
+        Book Management:
+            -Add new books with details like title, author, and genre.
+            -Remove books that are no longer available.
+            -Borrow and Return System:
+            -Users can borrow books, and the system will track which books are currently on loan.
+            -Books can be returned, making them available again.
+            -Search and View:
+            -Search for books by title or author.
+            -View a list of all available books.
+            -Modules/Concepts Integrated:
+        File Handling:
+            -Save and load the library's book data (title, author, status) from a file (text or CSV).
+            -Functions:
+            -Use functions for adding, searching, borrowing, and returning books.
+            -Control Flow:
+            -Manage user input and handle different options like adding books or searching for titles.
+            -Data Structures:
+            -Use lists or dictionaries to store book information.
+            -OOP (Optional):
+            -Create a class for managing books with attributes (title, author, status) and methods (borrow, return).
+            -Error Handling:
+            -Handle common errors like searching for a book that doesn't exist or borrowing a book that’s already taken.
+            -Extra Features (Optional):
+        (Optional)
+        Due Date Tracking:
+            -Implement a simple due date system where borrowed books must be returned within a certain period.
+            -Search by Genre or Keyword:
+            -Allow users to search for books based on genre or any keyword in the title/author fields.
+            -Graphical Interface (Advanced):
+            -Optionally use tkinter to create a simple graphical interface for adding and searching books.
