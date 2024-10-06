@@ -131,7 +131,8 @@ class Staff:
 class Books(Staff):
     def __init__(self):
         super().__init__() 
-        self.books = self.load_books()    
+        self.books = self.load_books()
+            
 
     def load_books(self):
         try:
@@ -167,6 +168,43 @@ class Books(Staff):
                     }
                 )
                 self.save_books()
+    
+    
+    def update_books(self):
+        who_is_updating = int(input("enter your id: "))
+        found_manager = False  # Move this initialization outside the for loop
+        for staff in self.staff:
+            if staff["id"] == who_is_updating and staff["job"] == "manager":
+                found_manager = True  # Set this to True when a manager is found
+                updated_book = input("enter the book id:  ")
+                found = False
+                for book in self.books:
+                    if book["book_id"] == updated_book:
+                        change_what = input("enter what do you want to change (name, author, price): ").lower()
+                        if change_what == "name":
+                            new_name = input("enter the new book name: ")
+                            found = True
+                            book["book_name"] = new_name  # Use assignment '='
+                        elif change_what == "author":
+                            new_authorname = input("enter the new author name: ")
+                            found = True
+                            book["book_author"] = new_authorname  # Use assignment '='
+                        elif change_what == "price":
+                            new_price = float(input("enter the new price: "))
+                            found = True
+                            book["book_price"] = new_price  # Use assignment '='
+                        else:
+                            print("Invalid choice for update.")
+                        self.save_books()  # Save the updated book information
+                        break  # Exit loop after finding and updating the book
+                if not found:
+                    print("No book found with the given ID.")
+        if not found_manager:
+            print("You are not allowed to do this, only managers.")
+   
+        
+                   
+                        
 
 
 
@@ -182,6 +220,8 @@ if answer == "books":
     message = str(input("enter a choise(add,delete,update,search,get,search): "))
     if message == "add":
         Books().add_books()
+    elif message == "update":
+        Books().update_books()
 
 else:
     print("what do you want to do? ")
